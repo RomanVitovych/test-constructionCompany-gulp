@@ -1,0 +1,10 @@
+@mixin fontProperties(
+    $fontSize,
+    $lineHeight,
+    $fontWeight,
+    $fontColor) {
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    font-weight: $fontWeight;
+    color: $fontColor;
+}

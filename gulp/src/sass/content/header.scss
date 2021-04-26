@@ -1,0 +1,72 @@
+// ===== banner =====
+
+.header-banner {
+    background: 
+    linear-gradient(180deg,
+    rgba(0, 0, 0, 0.66) 0%, 
+    rgba(0, 0, 0, 0) 100%), 
+    url('https://image.freepik.com/free-photo/electrician-installer-with-tool-his-hands-working-with-cable-construction-site_169016-5274.jpg');
+    height: 360px;
+    @extend %imagePosition;
+}
+
+// ===== contact =====
+
+.header-contact {
+    background: rgba(0, 0, 0, 0.31);
+    height: 32px;
+    align-items: center;
+}
+
+.headerContact-list__item {
+    font-family: $gilroyFont;
+    @include fontProperties(16px, 19px, 500, #ffffff);
+}
+
+
+
+
+
+// ========================================================================
+// ========================================================================
+// ========================================================================
+@media (min-width: 768px) {
+  .container-md, .container-sm, .container {
+    max-width: 720px;
+  }
+
+  // ===== banner =====
+
+  .header-banner {
+    height: 510px;
+  }
+  
+  // ===== contact =====
+
+  .header-contact {
+    height: 36px;
+  }
+}
+
+
+
+// ========================================================================
+// ========================================================================
+// ========================================================================
+@media (min-width: 1480px) {
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1440px;
+  }
+
+  // ===== banner =====
+
+  .header-banner {
+    height: 1014px;
+  }
+
+  // ===== contact =====
+
+  .header-contact {
+    height: 54px;
+  }
+}
