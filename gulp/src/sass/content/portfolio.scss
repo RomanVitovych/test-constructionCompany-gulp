@@ -1,0 +1,284 @@
+// ===== title =====
+
+.portfolio-title {
+    padding: 20px 12px;
+    h2 {
+        font-family: $gilroyFont;
+        @include fontProperties(16px, 22px, 400, #FF9900);
+        letter-spacing: 10px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    span {
+        font-family: $playfairFont;
+        @include fontProperties(36px, 52px, 400, #000000);
+        text-transform: none;
+        letter-spacing: 0.2px;
+        text-align: center;
+    }
+}
+
+// ===== slider =====
+
+.slider-list__item {
+  position: relative;
+    padding: 0 10px;
+    h3 {
+    font-family: $gilroyFont;
+    @include fontProperties(16px, 19px, 600, #000000);
+    margin-bottom: 10px;
+    }
+    .slider-list__content {
+    font-family: $gilroyFont;
+    @include fontProperties(14px, 16px, 400, #000000);
+    text-align: justify;
+    margin-bottom: 10px;
+    }
+    .slider-list__term {
+    font-family: $gilroyFont;
+    @include fontProperties(16px, 19px, 400, #000000);
+    margin-bottom: 10px;
+    }
+    .slider-list__area {
+    font-family: $gilroyFont;
+    @include fontProperties(16px, 19px, 400, #000000);
+    margin-bottom: 10px;
+    }
+}
+
+.portfolio-plan {
+  position: absolute;
+  right: 0;
+  top: 30px;
+  background-image: url('../../images/portfolio/two-bedroom-x2--plan\ 1.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin: 0 auto;
+  width: 250px;
+  height: 200px;
+}
+
+// ==========
+
+.portfolio-image {
+  @extend %imagePosition;
+}
+
+.small-image {
+  margin: 0 5px 5px 0;
+}
+
+.bigImage-wrap {
+  padding: 0;
+}
+
+.image1 {
+  background-image: url('../../images/portfolio/IMG-5df07b3763eafd38c2b6a39e8931f59e-V\ 1.jpg');
+  width: 55px;
+  height: 60px;
+}
+.image2 {
+  background-image: url('../../images/portfolio/IMG-d05443d3f4428e6bf0ce8ca56ccde1bb-V\ 2.jpg');
+  width: 55px;
+  height: 60px;
+}
+.image3 {
+  background-image: url('../../images/portfolio/IMG-852079bf847a9ff606b6f9a0092acda4-V\ 3.jpg');
+  width: 55px;
+  height: 60px;
+}
+.image4 {
+  background-image: url('../../images/portfolio/IMG-519014695cc4d76f64d23f95fcac3dc2-V\ big.jpg');
+  width: 240px;
+  height: 240px;
+}
+
+
+
+
+
+
+
+
+
+
+
+// ====================================================================
+// ====================================================================
+// ====================================================================
+@media (max-width: 767px) {
+  .container-sm, .container {
+    max-width: 320px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+// =====================================================================
+// =====================================================================
+// =====================================================================
+@media (min-width: 768px) {
+  .container-md, .container-sm, .container {
+    max-width: 720px;
+  }
+
+  // ===== title =====
+
+.portfolio-title {
+    padding: 60px 12px 20px 12px;
+}
+
+// ===== slider =====
+
+.slider-list__item {
+    h3 {
+    @include fontProperties(20px, 24px, 600, #000000);
+    padding-top: 40px;
+    margin-bottom: 20px;
+    }
+    .slider-list__content {
+    @include fontProperties(16px, 20px, 400, #000000);
+    text-align: start;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    }
+    .slider-list__term {
+    @include fontProperties(16px, 20px, 400, #000000);
+    }
+    .slider-list__area {
+    @include fontProperties(16px, 20px, 400, #000000);
+    margin-bottom: 0;
+    }
+}
+
+.portfolio-plan {
+  right: 288px;
+  top: 110px;
+  width: 375px;
+  height: 250px;
+}
+
+// ==========
+
+.image1 {
+  
+  width: 55px;
+  height: 60px;
+}
+.image2 {
+  
+  width: 55px;
+  height: 60px;
+}
+.image3 {
+ 
+  width: 55px;
+  height: 60px;
+}
+.image4 {
+ 
+  width: 275px;
+  height: 360px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+// ======================================================================
+// ======================================================================
+// ======================================================================
+@media (min-width: 1480px) {
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1440px;
+  }
+
+  // ===== title =====
+
+.portfolio-title {
+    padding: 100px 12px 20px 12px;
+    h2 {
+        @include fontProperties(18px, 25px, 400, #FF9900);
+        margin-bottom: 20px;
+    }
+    span {
+        font-family: $playfairFont;
+        @include fontProperties(40px, 56px, 400, #000000);
+        text-align: center;
+    }
+}
+
+// ===== slider =====
+
+.slider-list__item {
+    h3 {
+    @include fontProperties(24px, 33px, 600, #000000);
+    padding-top: 120px;
+    padding-left: 100px;
+    margin-bottom: 40px;
+    }
+    .slider-list__content {
+    @include fontProperties(18px, 25px, 400, #000000);
+    padding-left: 100px;
+    padding-right: 80px;
+    margin-bottom: 40px;
+    }
+    .slider-list__term {
+    @include fontProperties(18px, 25px, 400, #000000);
+    padding-left: 100px;
+    margin-bottom: 20px;
+    }
+    .slider-list__area {
+    @include fontProperties(18px, 25px, 400, #000000);
+    padding-left: 100px;
+    margin-bottom: 20px;
+    }
+}
+
+.portfolio-plan {
+  right: 590px;
+  top: 198px;
+  width: 675px;
+  height: 450px;
+}
+
+// ==========
+
+.image1 {
+  width: 102px;
+  height: 105px;
+}
+.image2 {
+  width: 102px;
+  height: 105px;
+}
+.image3 {
+  width: 102px;
+  height: 105px;
+}
+.image4 {
+  width: 580px;
+  height: 650px;
+  padding: 0;
+}
+
+
+
+}  

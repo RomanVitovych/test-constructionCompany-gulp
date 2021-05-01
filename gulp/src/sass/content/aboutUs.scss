@@ -1,0 +1,210 @@
+// ===== image =====
+
+.aboutUs-image {
+    position: relative;
+    background: url('../../images/aboutUs/charles-deluvio-c2thq3SXJiA-unsplash\ 1.jpg');
+    min-height: 384px;
+    @extend %imagePosition;
+}
+
+.experience {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: url('../../images/aboutUs/Rectangle\ 143.jpg');
+    width: 120px;
+    height: 110px;
+    p {
+        font-family: $gilroyFont;
+        @include fontProperties(16px, 20px, 400, #fff);
+        padding: 10px 20px;
+    }
+    span {
+        font-family: $playfairFont;
+        @include fontProperties(36px, 48px, 400, #fff);
+    }
+
+}    
+
+    // ===== content =====
+
+    .aboutUs-content {
+        position: relative;
+        padding: 20px 12px;
+        h2 {
+            font-family: $gilroyFont;
+            @include fontProperties(16px, 22px, 400, #FF9900);
+            letter-spacing: 10px;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        span {
+            font-family: $playfairFont;
+            @include fontProperties(36px, 52px, 400, #000000);
+            text-transform: none;
+            letter-spacing: 0.2px;
+            text-align: center;
+        }
+        p {
+            font-family: $gilroyFont;
+            @include fontProperties(16px, 20px, 400, #7C7C7C);
+            text-align: justify;
+        }
+    }
+
+    .plan-img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: url('../../images/aboutUs/two-bedroom-x2--plan\ 2\ \(3\).png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        margin: 0 auto;
+        width: 300px;
+        height: 200px;
+    }
+
+
+
+
+
+
+
+
+
+
+// ====================================================================
+// ====================================================================
+// ====================================================================
+@media (max-width: 767px) {
+  .container-sm, .container {
+    max-width: 320px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+// =====================================================================
+// =====================================================================
+// =====================================================================
+@media (min-width: 768px) {
+  .container-md, .container-sm, .container {
+    max-width: 720px;
+  }
+
+  // ===== image =====
+
+.aboutUs-image {
+    min-height: 575px;
+}
+
+.experience {
+    width: 140px;
+    height: 136px;
+    p {
+        @include fontProperties(24px, 30px, 400, #fff);
+        padding: 0 20px;
+    }
+    span {
+        @include fontProperties(54px, 72px, 400, #fff);
+    }
+}
+
+    // ===== content =====
+
+    .aboutUs-content {
+        padding: 100px 40px 0 60px;
+        h2 {
+            font-family: $gilroyFont;
+            @include fontProperties(16px, 22px, 400, #FF9900);
+            letter-spacing: 10px;
+            text-transform: uppercase;
+            text-align: start;
+            margin-bottom: 20px;
+        }
+        span {
+            font-family: $playfairFont;
+            @include fontProperties(36px, 52px, 400, #000000);
+            text-align: start;
+        }
+        p {
+            font-family: $gilroyFont;
+            @include fontProperties(16px, 20px, 400, #7C7C7C);
+            text-align: justify;
+        }
+    }
+
+    .plan-img {
+        width: 375px;
+        height: 250px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+// ======================================================================
+// ======================================================================
+// ======================================================================
+@media (min-width: 1480px) {
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1440px;
+  }
+
+  // ===== image =====
+
+.aboutUs-image {
+    min-height: 766px;
+}
+
+.experience {
+    width: 238px;
+    height: 220px;
+    p {
+        @include fontProperties(30px, 42px, 400, #fff);
+        padding: 10px 40px;
+    }
+    span {
+        @include fontProperties(70px, 98px, 400, #fff);
+    }
+}
+
+    // ===== content =====
+
+    .aboutUs-content {
+        padding: 140px 200px 0 260px;
+        h2 {
+            font-family: $gilroyFont;
+            @include fontProperties(18px, 25px, 400, #FF9900);
+            margin-bottom: 40px;
+        }
+        span {
+            font-family: $playfairFont;
+            @include fontProperties(40px, 56px, 400, #000000);
+        }
+        p {
+            font-family: $gilroyFont;
+            @include fontProperties(18px, 25px, 400, #7C7C7C);
+        }
+    }
+
+    .plan-img {
+        width: 675px;
+        height: 450px;
+    }
+}

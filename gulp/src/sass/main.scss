@@ -2,10 +2,16 @@
  * Все паршалы импортировать в этот файл
  */
 
-@import 'bootstrap-grid.scss'; 
-@import 'normalize.scss';
-@import 'base.scss';
-@import './helpers/variables.scss';
-@import './helpers/mixins.scss';
-@import './content/header.scss';
-@import './helpers/templates.scss';
+ 
+ @import './libs/bootstrap/bootstrap-grid.scss'; 
+ @import 'normalize.scss';
+ @import 'base.scss';
+ @import './libs/slick/slick.scss';
+ @import './libs/slick/slick-theme.scss';
+ @import './helpers/variables.scss';
+ @import './helpers/mixins.scss';
+ @import './content/header.scss';
+ @import './content/aboutUs.scss';
+ @import './content/work.scss';
+ @import './content/portfolio.scss';
+ @import './helpers/templates.scss';

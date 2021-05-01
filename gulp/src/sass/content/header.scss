@@ -6,7 +6,7 @@
     rgba(0, 0, 0, 0.66) 0%, 
     rgba(0, 0, 0, 0) 100%), 
     url('https://image.freepik.com/free-photo/electrician-installer-with-tool-his-hands-working-with-cable-construction-site_169016-5274.jpg');
-    height: 360px;
+    height: 420px;
     @extend %imagePosition;
 }
 
@@ -14,14 +14,305 @@
 
 .header-contact {
     background: rgba(0, 0, 0, 0.31);
-    height: 32px;
+    height: 60px;
     align-items: center;
+    margin: 0;
+}
+
+.headerContact-list {
+    margin-bottom: 10px;
 }
 
 .headerContact-list__item {
     font-family: $gilroyFont;
-    @include fontProperties(16px, 19px, 500, #ffffff);
+    @include fontProperties(14px, 18px, 500, #ffffff);
+    text-align: center;
 }
+
+.headerSoc-list__item {
+    text-align: center;
+    svg {
+        vertical-align: middle;
+    }
+}
+
+// ===== menu =====
+
+/* header */
+
+.header {
+  background-color: transparent;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+//   position: fixed;
+  width: 100%;
+//   z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header li a {
+  display: block;
+  font-family: $gilroyFont;
+  @include fontProperties(16px, 25px, 700, #FF9900);
+  padding: 10px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+  transition: all 0.2s linear ;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  text-decoration: none;
+  font-family: $gilroyFont;
+  @include fontProperties(18px, 40px, 900, #FF9900);
+  text-transform: uppercase;
+  padding: 0 20px;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 20px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #fff;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #fff;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+// ===== button =====
+
+.header-btn {
+    @extend %button;
+    color: #FF9900;
+    margin: 0 auto;
+    margin-top: 10px; 
+  &:focus,
+  &:hover {
+      background-color: #FF9900;
+      color: #fff;
+    }
+}
+
+// ===== title =====
+
+.header-title {
+  font-family: $playfairFont;
+  @include fontProperties(20px, 24px, 400, #fff);
+  text-align: center;
+  margin: 5px 0;
+}
+
+// ===== content =====
+
+.header-content {
+  font-family: $gilroyFont;
+  @include fontProperties(14px, 16px, 400, #fff);
+  margin: 5px 0 10px 0;
+}
+
+// ===== second btn =====
+
+.headerSecond-btn {
+  @extend %button;
+  background-color: #FF9900;
+  margin: 0 0 0 20px;
+  color: #fff;
+  &:focus,
+  &:hover {
+      background-color: transparent;
+      color: #FF9900;
+    }
+}
+
+// ===== order =====
+
+.order-wrap {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(3px);
+  height: 80px;
+  margin-top: 18px;
+}
+
+.order-list {
+  align-items: center;
+  margin: 0 1px;
+}
+
+.order-list__item {
+  position: relative;
+  p {
+    font-family: $gilroyFont;
+    @include fontProperties(10px, 14px, 300, #fff);
+    padding: 5px 5px;
+  }
+  .svg11{
+    display: none;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 20%;
+    left: 44%;
+  }
+  .svg21{
+    display: none;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 20%;
+    left: 50%;
+  }
+  .svg31{
+    display: none;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 25%;
+    left: 62%;
+  }
+  .svg41{
+    display: none;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 20%;
+    left: 58%;
+  }
+  .svg51{
+    display: none;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 20%;
+    left: 40%;
+  }
+  .svg52 {
+    display: none;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 36%;
+    left: 52%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+// =======================================================================
+// =======================================================================
+// =======================================================================
+
+@media (max-width: 767px) {
+  .container-sm, .container {
+    max-width: 320px;
+  }
+
+  // ===== menu =====
+
+  .header .menu {
+    position: absolute;
+    z-index: 2;
+    width: 320px;
+    margin-top: 44px;
+}
+
+// ===== content =====
+
+.header-content {
+  text-align: justify;
+  height: 60px;
+  overflow: scroll;
+  padding: 0 20px;
+}
+}
+
+
+
+
+
 
 
 
@@ -38,7 +329,7 @@
   // ===== banner =====
 
   .header-banner {
-    height: 510px;
+    height: 560px;
   }
   
   // ===== contact =====
@@ -46,7 +337,144 @@
   .header-contact {
     height: 36px;
   }
+
+  .headerContact-list {
+    margin-bottom: 0;
 }
+
+  .headerContact-list__item {
+    @include fontProperties(16px, 19px, 500, #ffffff);
+}
+
+// ===== menu =====
+
+.header .logo {
+    @include fontProperties(22px, 60px, 900, #FF9900);
+    text-align: center;
+}
+
+.header ul {
+  background-color: transparent;
+}
+
+.header li {
+    float: left;
+}
+.header li a {
+    @include fontProperties(16px, 60px, 400, #fff);
+    border-right: 1px solid transparent;
+    border-bottom: 2px solid transparent;
+    padding: 0 ;
+    margin: 0 25px;
+    &:hover{
+        background-color: transparent;
+        border-bottom: 2px solid #FF9900;
+        color: #FF9900;
+    }
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+
+  // ===== title =====
+
+.header-title {
+  @include fontProperties(32px, 38px, 400, #fff);
+  text-align: start;
+  margin: 40px 0 10px 0;
+}
+
+// ===== content =====
+
+.header-content {
+  @include fontProperties(16px, 20px, 400, #fff);
+  margin: 20px 0 30px 0;
+}
+
+// ===== second btn =====
+
+.headerSecond-btn {
+  margin: 0;
+}
+
+// ===== order =====
+
+.order-wrap {
+  height: 100px;
+  margin-top: 24px;
+}
+
+.order-list__item {
+  position: relative;
+  p {
+    font-family: $gilroyFont;
+    @include fontProperties(16px, 20px, 600, #fff);
+    padding: 10px 5px;
+  }
+  .svg11{
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 20%;
+    left: 64%;
+  }
+  .svg21{
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 20%;
+    left: 65%;
+  }
+  .svg31{
+    display: block;
+    position: absolute;
+    width: 36px;
+    height: 40px;
+    top: 32%;
+    left: 70%;
+  }
+  .svg41{
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 30%;
+    left: 62%;
+  }
+  .svg51{
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 20%;
+    left: 60%;
+  }
+  .svg52 {
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 16px;
+    top: 36%;
+    left: 68%;
+  }
+}
+
+
+}
+
+
+
+
+
+
+
 
 
 
@@ -69,4 +497,110 @@
   .header-contact {
     height: 54px;
   }
+
+//   ===== menu =====
+
+.header {
+    width: 75%;
+}
+
+.header .logo {
+    @include fontProperties(24px, 80px, 900, #FF9900);
+    padding: 0 120px;
+}
+
+.header li a {
+    @include fontProperties(18px, 80px, 400, #fff);
+    margin: 0 40px;
+}  
+
+// ===== button =====
+
+.header-btn {
+    margin-top: 20px; 
+
+}
+
+// ===== title =====
+
+.header-title {
+  @include fontProperties(40px, 56px, 400, #fff);
+  padding: 0 40px;
+  margin: 150px 0 10px 0;
+}
+
+// ===== content ===== 
+
+.header-content {
+  @include fontProperties(18px, 25px, 400, #fff);
+  padding: 0 0 0 40px;
+  margin: 20px 0 30px 0;
+}
+
+// ===== second btn =====
+
+.headerSecond-btn {
+  margin: 50px 0 0 40px;
+}
+
+// ===== order =====
+
+.order-wrap {
+  height: 170px;
+  margin-top: 258px;
+}
+
+.order-list__item {
+  position: relative;
+  p {
+    font-family: $gilroyFont;
+    @include fontProperties(20px, 27.88px, 600, #fff);
+    padding: 44px 20px;
+  }
+  .svg11{
+    position: absolute;
+    width: 92px;
+    height: 92px;
+    top: 20%;
+    left: 44%;
+  }
+  .svg21{
+    position: absolute;
+    width: 92px;
+    height: 92px;
+    top: 20%;
+    left: 50%;
+  }
+  .svg31{
+    position: absolute;
+    width: 80px;
+    height: 92px;
+    top: 25%;
+    left: 62%;
+  }
+  .svg41{
+    position: absolute;
+    width: 92px;
+    height: 92px;
+    top: 20%;
+    left: 58%;
+  }
+  .svg51{
+    position: absolute;
+    width: 92px;
+    height: 92px;
+    top: 20%;
+    left: 40%;
+  }
+  .svg52 {
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    top: 36%;
+    left: 52%;
+  }
+}
+
+
+
 }
