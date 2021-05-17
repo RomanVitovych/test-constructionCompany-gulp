@@ -1,0 +1,116 @@
+.wrap {
+    min-height: 300px;
+    background-color: #FFB800;
+    margin: 0;
+}
+
+// ===== title =====
+
+.feedback-title {
+    margin: 40px 0 20px 0;
+    h2 {
+        font-family: $playfairFont;
+        @include fontProperties(18px, 26px, 700, #FFFFFF);
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    p {
+        font-family: $gilroyFont;
+        @include fontProperties(14px, 18px, 400, #FFFFFF);
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+// =======================================================================
+// =======================================================================
+// =======================================================================
+
+@media (max-width: 767px) {
+  .container-sm, .container {
+    max-width: 320px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+// ========================================================================
+// ========================================================================
+// ========================================================================
+@media (min-width: 768px) {
+  .container-md, .container-sm, .container {
+    max-width: 720px;
+  }
+
+.wrap {
+    min-height: 360px;
+}
+
+// ===== title =====
+
+.feedback-title {
+    margin: 40px 0 20px 0;
+    h2 {
+        @include fontProperties(24px, 32px, 700, #FFFFFF);
+        text-align: start;
+        margin-bottom: 5px;
+    }
+    p {
+        @include fontProperties(16px, 20px, 400, #FFFFFF);
+        text-align: start;
+    }
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+// ========================================================================
+// ========================================================================
+// ========================================================================
+@media (min-width: 1480px) {
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1440px;
+  }
+
+.wrap {
+    min-height: 400px;
+}
+
+// ===== title =====
+
+.feedback-title {
+    margin: 40px 0 20px 0;
+    h2 {
+        @include fontProperties(30px, 40px, 700, #FFFFFF);
+        margin-bottom: 10px;
+    }
+    p {
+        @include fontProperties(18px, 21px, 400, #FFFFFF);
+    }
+}
+
+}

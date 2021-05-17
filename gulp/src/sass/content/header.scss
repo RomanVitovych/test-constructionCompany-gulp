@@ -204,8 +204,6 @@
 // ===== order =====
 
 .order-wrap {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(3px);
   height: 80px;
   margin-top: 18px;
 }
@@ -217,10 +215,11 @@
 
 .order-list__item {
   position: relative;
+  width: 20%;
   p {
     font-family: $gilroyFont;
     @include fontProperties(10px, 14px, 300, #fff);
-    padding: 5px 5px;
+    padding: 5px 2px;
   }
   .svg11{
     display: none;
@@ -306,6 +305,10 @@
   height: 60px;
   overflow: scroll;
   padding: 0 20px;
+}
+
+.order-list__item {
+  padding: 0;
 }
 }
 
@@ -405,6 +408,8 @@
 // ===== order =====
 
 .order-wrap {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(3px);
   height: 100px;
   margin-top: 24px;
 }
@@ -552,6 +557,7 @@
 
 .order-list__item {
   position: relative;
+  width: 17%;
   p {
     font-family: $gilroyFont;
     @include fontProperties(20px, 27.88px, 600, #fff);
