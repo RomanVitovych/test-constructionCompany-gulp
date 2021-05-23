@@ -37,7 +37,7 @@ $('.js_slider').slick({
 
 // ===== reviews =====
 
-$('.js-reviews_slider').slick({
+$('.js-slider2').slick({
      centerMode: true,
         centerPadding: '10px',
         slidesToShow: 1,
@@ -48,7 +48,7 @@ $('.js-reviews_slider').slick({
       breakpoint: 1439,
       settings: {
         centerMode: true,
-        centerPadding: '10px',
+        centerPadding: '20px',
         slidesToShow: 1,
         arrows: true,
         dots: true,
@@ -59,7 +59,7 @@ $('.js-reviews_slider').slick({
       breakpoint: 767,
       settings: {
         centerMode: true,
-        centerPadding: '10px',
+        centerPadding: '5px',
         slidesToShow: 1,
         arrows: true,
         dots: true,
