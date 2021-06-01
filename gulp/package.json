@@ -50,6 +50,7 @@
     "usedcss": "^1.0.7"
   },
   "dependencies": {
-    "bootstrap-gulp": "^3.1.7-beta"
+    "bootstrap-gulp": "^3.1.7-beta",
+    "formik": "^2.2.8"
   }
 }

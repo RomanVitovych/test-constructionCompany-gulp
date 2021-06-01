@@ -7,10 +7,42 @@
                     <p>Залиште номер телефону, і ми зв'яжемося з вами на протязі 5 хвилин.</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-10">
-                    <form>
+            <div class="row justify-content-center">
+                <div class="col-sm-10 col-md-6">
+                    <form class="feedback-form">
+                        <p>
+                            <input
+                             class="feedback-name"
+                             type="text"
+                             name="name"
+                             placeholder="Ім'я"
+                             autofocus
+                             required>
+                        </p>
 
+                        <p>
+                            <input 
+                            class="feedback-email"
+                            type="email"
+                            name="email"
+                            placeholder="E-mail"
+                            autofocus
+                            required>
+                        </p>
+
+                        <p>
+                            <textarea 
+                            class="feedback-message"
+                            name="message" 
+                            id="" 
+                            cols="30" 
+                            rows="1"
+                            placeholder="Ваше повідомлення"
+                            autofocus
+                            required></textarea>
+                        </p>
+
+                        <button class="feedback-button">Надіслати</button>
                     </form>
                 </div>
             </div>
