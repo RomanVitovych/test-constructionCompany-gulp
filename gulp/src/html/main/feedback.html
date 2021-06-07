@@ -2,35 +2,38 @@
     <div class="row wrap">
         <div class="col-12">
             <div class="row justify-content-center">
-                <div class="col-sm-8 col-md-6 feedback-title">
+                <div class="col-8 col-xxl-6 feedback-title">
                     <h2>Зв'яжіться з нами</h2>
                     <p>Залиште номер телефону, і ми зв'яжемося з вами на протязі 5 хвилин.</p>
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-sm-10 col-md-6">
+                <div class="col-sm-10 col-md-8 col-xxl-6">
                     <form class="feedback-form">
-                        <p>
-                            <input
-                             class="feedback-name"
-                             type="text"
-                             name="name"
-                             placeholder="Ім'я"
-                             autofocus
-                             required>
-                        </p>
 
-                        <p>
-                            <input 
-                            class="feedback-email"
-                            type="email"
-                            name="email"
-                            placeholder="E-mail"
-                            autofocus
-                            required>
-                        </p>
+                        <div class="row justify-content-between">
+                            <p class="col-sm-12 feedback-name-wrap">
+                                <input 
+                                class="feedback-name" 
+                                type="text" 
+                                name="name" 
+                                placeholder="Ім'я" 
+                                autofocus 
+                                required>
+                            </p>
+                            
+                            <p class="col-sm-12 feedback-email-wrap">
+                                <input 
+                                class="feedback-email"
+                                 type="email" 
+                                 name="email" 
+                                 placeholder="E-mail" 
+                                 autofocus 
+                                 required>
+                            </p>
+                        </div>
 
-                        <p>
+                        <p class="feedback-message-wrap">
                             <textarea 
                             class="feedback-message"
                             name="message" 

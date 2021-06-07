@@ -36,6 +36,12 @@
   }
 }
 
+.feedback-name-wrap,
+.feedback-email-wrap,
+.feedback-message-wrap {
+  width: 100%;
+}
+
 .feedback-name {
   width: 100%;
   background: transparent;
@@ -73,6 +79,9 @@
     outline: 1px solid red;
   }
 }
+
+
+// ======
 
 .feedback-button {
   @extend %button;
@@ -130,11 +139,9 @@
 // ===== title =====
 
 .feedback-title {
-    margin: 40px 0 20px 0;
     h2 {
         @include fontProperties(24px, 32px, 700, #FFFFFF);
         text-align: start;
-        margin-bottom: 5px;
     }
     p {
         @include fontProperties(16px, 20px, 400, #FFFFFF);
@@ -146,66 +153,29 @@
 
 .feedback-form {
   p {
-    text-align: center;
-    margin: 10px 0;
+    text-align: start;
     input::placeholder,
     textarea::placeholder{
-      font-family: $gilroyFont;
-      @include fontProperties(26px, 16px, 500, #FFFFFF);
-      padding: 5px;
+      @include fontProperties(14px, 16px, 500, #FFFFFF);
     }
   }
 }
 
-.feedback-name {
-  width: 50%;
-  background: transparent;
-  border: none;
-  padding: 5px 0;
-  border-bottom: 1px solid #FFFFFF;
-}
-.feedback-email {
-  width: 50%;
-  background: transparent;
-  outline: none;
-  border: none;
-  padding: 5px 0;
-  border-bottom: 1px solid #FFFFFF;
-}
-.feedback-message {
-  width: 100%;
-  background: transparent;
-  outline: none;
-  border: none;
-  padding: 10px 0;
-  border-bottom: 1px solid #FFFFFF;
+.feedback-name-wrap,
+.feedback-email-wrap {
+  width: 45%;
 }
 
-// === validation ===
 
-.feedback-name:focus,
-.feedback-email:focus,
-.feedback-message:focus {
-  outline: none;
-  &:valid {
-    outline: 1px solid green;
-  }
-  &:invalid {
-    outline: 1px solid red;
-  }
-}
+// ======
 
 .feedback-button {
-  @extend %button;
-  background: #FFFFFF;
-  color: #FFB800;
-  margin: 20px auto;
-  &:focus,
-  &:hover {
-    background: transparent;
-    color: #FFFFFF;
-  }
+  margin: 25px 0;
 }
+
+
+
+
 
 }
 
@@ -233,7 +203,7 @@
 // ===== title =====
 
 .feedback-title {
-    margin: 40px 0 20px 0;
+    margin: 40px 0 40px 0;
     h2 {
         @include fontProperties(30px, 40px, 700, #FFFFFF);
         margin-bottom: 10px;
@@ -241,6 +211,25 @@
     p {
         @include fontProperties(18px, 21px, 400, #FFFFFF);
     }
+}
+
+// ===== form =====
+
+.feedback-form {
+  p {
+    input::placeholder,
+    textarea::placeholder{
+      @include fontProperties(16px, 19px, 500, #FFFFFF);
+    }
+  }
+}
+
+
+
+// ======
+
+.feedback-button {
+  margin: 50px 0;
 }
 
 }
